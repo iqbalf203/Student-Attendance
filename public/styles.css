@@ -65,11 +65,27 @@ form input {
 
 .tStudents {
   position: absolute;
-  margin-left: 60px;
+  margin-left: 10px;
   color: #fff;
   background-color: green;
   width: 100px;
   padding: 7px;
   border-radius: 10px;
   border: none;
+}
+
+.btn-clear {
+  margin-left: 115px;
+  color: #fff;
+  background-color: red;
+  opacity: 0.8;
+  width: 50px;
+  padding: 7px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-clear:hover {
+  opacity: 1;
 }
