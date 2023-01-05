@@ -30,6 +30,9 @@ function CreateArea(props) {
     });
     event.preventDefault();
   }
+  function clear() {
+    localStorage.clear();
+  }
 
   return (
     <div>
@@ -79,6 +82,9 @@ function CreateArea(props) {
         </button>
         <button className="tStudents">
           Total Students: <strong>{props.count}</strong>
+        </button>
+        <button className="btn-clear" onClick={clear}>
+          Clear
         </button>
       </form>
     </div>
