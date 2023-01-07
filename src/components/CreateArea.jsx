@@ -30,6 +30,7 @@ function CreateArea(props) {
     });
     event.preventDefault();
   }
+
   function clear() {
     localStorage.clear();
   }
@@ -39,27 +40,29 @@ function CreateArea(props) {
       <form className="create-table">
         <label>
           {" "}
-          Name:
+          <span>Name:</span>
           <input
             name="name"
             onChange={handleChange}
             value={detail.value}
             placeholder="Name"
+            autoComplete="off"
           />
         </label>
         <label>
           {" "}
-          Roll No:
+          <span>Roll No:</span>
           <input
             name="roll"
             onChange={handleChange}
             value={detail.value}
             placeholder="Roll No."
+            autoComplete="off"
           />
         </label>
         <label>
           {" "}
-          Checkin Time:
+          <span>Checkin Time:</span>
           <input
             type="time"
             name="timeIn"
@@ -69,7 +72,7 @@ function CreateArea(props) {
         </label>
         <label>
           {" "}
-          CheckOut Time:
+          <span>CheckOut Time:</span>
           <input
             type="time"
             name="timeOut"
